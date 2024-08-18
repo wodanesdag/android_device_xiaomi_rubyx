@@ -1210,9 +1210,6 @@ vendor/firmware/txpowerctrl_in_u.cfg
 vendor/firmware/soc5_0_ram_mcu_1_1_hdr.bin|51fa1e68ce0038b2bd39a45d85958fae78e0c634
 vendor/firmware/soc5_0_ram_wmmcu_1_1_hdr.bin|29a76dc9c1910a497dd63693ff6b78ac8519e4f6
 
-# ConsumerIr
-vendor/lib64/hw/consumerir.common.so
-
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
