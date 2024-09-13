@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/rubyx
+DEVICE_PATH := device/xiaomi/ruby
 
 # A/B
 AB_OTA_UPDATER := true
@@ -43,9 +43,6 @@ TARGET_DYNAMIC_64_32_MEDIASERVER := true
 
 # Include 64-bit drmserver to support 64-bit only devices
 TARGET_DYNAMIC_64_32_DRMSERVER := true
-
-# Assert
-TARGET_OTA_ASSERT_DEVICE := ruby,rubyx
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := ruby
@@ -198,5 +195,5 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # Inherit the proprietary files
--include device/xiaomi/miuicamera-rubyx/BoardConfig.mk
-include vendor/xiaomi/rubyx/BoardConfigVendor.mk
+-include device/xiaomi/miuicamera-ruby/BoardConfig.mk
+include vendor/xiaomi/ruby/BoardConfigVendor.mk
