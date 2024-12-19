@@ -17,7 +17,7 @@ PRODUCT_NAME := lineage_ruby
 PRODUCT_DEVICE := ruby
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := ruby
+PRODUCT_MODEL := 22101316G
 
 PRODUCT_SYSTEM_NAME := ruby_global
 PRODUCT_SYSTEM_DEVICE := ruby
@@ -25,6 +25,9 @@ PRODUCT_SYSTEM_DEVICE := ruby
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="ruby-user 14 UP1A.230620.001 V816.0.12.0.UMOMIXM release-keys"
+    BuildDesc=$(call normalize-path-list, "ruby-user 14 UP1A.230620.001 V816.0.12.0.UMOMIXM release-keys") \
+    DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
+    DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
-    BuildFingerprint=Redmi/ruby_global/ruby:14/UP1A.230620.001/V816.0.12.0.UMOMIXM:user/release-keys
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := Redmi/ruby_global/ruby:14/UP1A.230620.001/V816.0.12.0.UMOMIXM:user/release-keys
