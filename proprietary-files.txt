@@ -1618,7 +1618,6 @@ vendor/lib/libapusys.so
 vendor/lib64/APUWareApusysServer.so
 vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/APUWareXrpServer_v2.so
-vendor/lib64/libOpenCL.so
 vendor/lib64/libapu_mdw.so
 vendor/lib64/libapu_mdw_batch.so
 vendor/lib64/libapusys.so
@@ -1819,7 +1818,6 @@ vendor/lib64/libsensor_custom.so
 # Soter
 vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service
 vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc
--vendor/etc/vintf/manifest/manifest_microtrust_wechat.xml
 vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
 
 # Vibrator
