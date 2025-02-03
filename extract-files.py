@@ -61,7 +61,7 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/libmtkcam_stdutils.so', 'vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'system_ext/lib64/libsink.so': blob_fixup()
-        .add_needed('libshim_sink.so'),
+        .add_needed('libaudioclient_shim.so'),
     'system_ext/lib64/libsource.so': blob_fixup()
         .add_needed('libui_shim.so'),
 }  # fmt: skip
